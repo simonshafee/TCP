@@ -30,6 +30,7 @@ main{
    
     border-radius: 5%;
     text-align: center;
+    
 
    
     
@@ -172,7 +173,7 @@ img{
 }
 #health , #hunger, #thirst, #cleanliness, #happiness{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 2vw;
+    font-size: 1.8vw;
     color: rgb(0, 66, 111);
 }
 #petType{
