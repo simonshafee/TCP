@@ -173,7 +173,7 @@ img{
 }
 #health , #hunger, #thirst, #cleanliness, #happiness{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 1.8vw;
+    font-size: 1.5vw;
     color: rgb(0, 66, 111);
 }
 #petType{
