@@ -69,7 +69,7 @@ but.addEventListener("click", ()=>{
 
 but.addEventListener("click",()=>{
     if(input.value!=="")
-    header.textContent=`Your ${select.value} name is:${input.value}`
+    header.textContent=`Your ${select.value} name is: ${input.value}`
 
 })
 
