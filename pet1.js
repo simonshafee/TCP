@@ -16,7 +16,7 @@ const choName = document.querySelector(".choName");
 const select = document.querySelector("#petType");
 const but = document.getElementById("submit");
 const input = document.getElementById("input")
-const header = document.getElementById("header")
+const header = document.getElementById("headi")
 ////////Start choosing name and type
 let mate = ""
 but.addEventListener("click", ()=>{
