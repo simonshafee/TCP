@@ -23,8 +23,8 @@ but.addEventListener("click", ()=>{
     
    if(select.value === "Cat"){
     image.src = "./catNor.gif";
-   mate = Cat}
-   
+   mate = Cat};
+
 
 });
 
@@ -32,7 +32,10 @@ but.addEventListener("click", ()=>{
     
     if(select.value === "Dog"){
     mate = Dog
-      image.src = "./dogNor.gif"}
+      image.src = "./dogNor.gif"};
+    //   if(mate.health = 0){
+    //     image.src = "./dogD.gif"
+    //    }
  
  });
 
@@ -98,7 +101,7 @@ function  feedPet() {
     mate.happiness -= 1;
     // pro
     mate.thirst += 1;
-    mate.health -= 1;
+    mate.health -= 5;
 };
 function giveDrink() {
     // con
@@ -128,8 +131,28 @@ function cleanPet() {
 function condi(){
     if (mate.health >= 100)
         mate.health = 100;
-        if (mate.health <= 0){
+        if (mate.health <= 0 && select.value == "Cat"){
             mate.health = 0;
+            image.src = "./catD.gif"
+        }
+        if (mate.health <= 0 && select.value == "Dog"){
+            mate.health = 0;
+            image.src = "./dogD.gif"
+        }
+        if (mate.health <= 0 && select.value == "Rabbit"){
+            mate.health = 0;
+            image.src = "./rabbitD.gif"
+        }
+        if (mate.health <= 0 && select.value == "Monekey"){
+            mate.health = 0;
+            image.src = "./monkeyD.gif"
+            header.textContent = "I'M NOT GONNA DIE ;)?!?!"
+            header.style.color="rgba(255, 26, 26, 0.831)"
+            header.style.fontSize="150px"
+        }
+        if (mate.health <= 0 && select.value == "Dunekey"){
+            mate.health = 0;
+            image.src = "./dunkeyD.gif"
         }
         if (mate.hunger <= 0){
             mate.hunger = 0;
@@ -155,6 +178,7 @@ function condi(){
         if (mate.cleanliness >= 100){
             mate.cleanliness =100;
         } 
+        
     
 
 }
@@ -213,7 +237,7 @@ function renderData() {
         renderData();
         timingFunction();
         
-    }, 2000);
+    }, 4000);
 }
 timingFunction();
 
@@ -227,7 +251,7 @@ timingFunction();
             renderData();
             randomgift();
 
-    },3000)
+    },4000)
  }
 
  randomgift()
