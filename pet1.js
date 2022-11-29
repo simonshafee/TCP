@@ -85,7 +85,7 @@ class pet {
     }
 }
 
-let Cat = new pet(50,50,50,50,50);
+const Cat = new pet(50,50,50,50,50);
 const Dog = new pet(50,50,50,50,50);
 const Rabbit = new pet(50,50,50,50,50);
 const Monekey = new pet(50,50,50,50,50);
@@ -213,7 +213,7 @@ function renderData() {
         renderData();
         timingFunction();
         
-    }, 1000);
+    }, 2000);
 }
 timingFunction();
 
